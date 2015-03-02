@@ -1,0 +1,14 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @notebook.title
+%p
+  %b Description:
+  = @notebook.description
+%p
+  = image_tag @notebook.cover.url if @notebook.cover?
+
+= link_to 'Edit', edit_notebook_path(@notebook)
+\|
+= link_to 'Back', notebooks_path

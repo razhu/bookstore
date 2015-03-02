@@ -1,0 +1,10 @@
+= simple_form_for(@notebook) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title
+    = f.input :description
+    = f.input :cover, as: :file
+
+  .form-actions
+    = f.button :submit, data:{disable_with: "<i class='fa fa-spinner fa-spin'></i> Creating new notebook..."}
