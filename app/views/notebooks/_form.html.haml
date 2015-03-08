@@ -7,5 +7,5 @@
     = f.input :cover, as: :file
 
   .form-actions
-    = button_tag 'Create Notebook', data:{disable_with: "<i class='fa fa-spinner fa-spin'></i> Creating new notebook...".html_safe}
-    -#= f.button :submit, data:{disable_with: "<i class='fa fa-spinner fa-spin'></i> Creating new notebook...".html_safe}
+    = button_tag 'Create Notebook', data:{disable_with: "<i class='fa fa-spinner fa-spin'></i> Creating new notebook...".html_safe}, class: "btn btn-success"
+    -#=f.button :submit, data:{disable_with: "<i class='fa fa-spinner fa-spin'></i> Creating new notebook...".html_safe}

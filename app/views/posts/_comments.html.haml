@@ -1,0 +1,7 @@
+%h3 comments
+- @post.comments.each do |comment|
+  = comment.body
+  %br
+  %b
+    = comment.author
+  %br

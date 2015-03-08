@@ -1,0 +1,18 @@
+%h1 Listing posts
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Description
+      %th
+      %th
+      %th
+      
+  %tbody
+    = render 'posts', collection: @posts
+
+%br
+
+= link_to 'New Post', new_post_path
+= friendly_date Time.now
